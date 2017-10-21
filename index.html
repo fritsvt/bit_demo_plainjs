@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bit students plainJS</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="App">
+      <header class="App-header">
+        <h1 class="App-title">Bitstudents PlainJS</h1>
+      </header>
+      <div class="container">
+        <li>
+          <label>Search</label>
+          <input type="text" id="search_input"
+          onchange   = "SearchRecords();"
+          onkeypress = "SearchRecords();"
+          onpaste    = "SearchRecords();"
+          oninput    = "SearchRecords();" />
+          <span>Search for, Id, Name, Email or Ip</span>
+      </li>
+        <div id="users">
+          <table>
+            <tr>
+              <th onclick="sortData('id')">Id</th>
+              <th onclick="sortData('first_name')">Firstname</th>
+              <th onclick="sortData('last_name')">Lastname</th>
+              <th onclick="sortData('email')">Email</th>
+              <th onclick="sortData('gender')">Gender</th>
+              <th onclick="sortData('ip_address')">Ip adress</th>
+            </tr>
+            <tbody id="table_body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/SortJson.js"></script>
+    <script src="js/QueryJson.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
