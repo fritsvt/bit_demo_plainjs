@@ -7,7 +7,7 @@ var table_body = document.querySelector('#table_body');
 var search_input = document.querySelector('#search_input');
 
 document.addEventListener('DOMContentLoaded', function () {
-  loadJSON('/assets/data.json', onLoadData);
+  loadJSON('assets/data.json', onLoadData);
 });
 
 function onLoadData(data) {
